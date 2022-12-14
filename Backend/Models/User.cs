@@ -1,7 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System;
-
+using System.Collections;
+using backend.Models;
+using System.Collections.Generic;
 
 namespace Backend.Models
 {
@@ -62,5 +64,7 @@ namespace Backend.Models
         public int OTP { get; set; }
 
         public bool IsVerified { get; set; }
+
+        public virtual ICollection<TasAssigned> TaskAssigned { get; set; }
     }
 }
