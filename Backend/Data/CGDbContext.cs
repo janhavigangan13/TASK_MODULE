@@ -14,7 +14,7 @@ namespace Backend.Data
 
         public DbSet<User> User { get; set; }
 
-        public DbSet<TasAssigned> TaskAssigned { get; set; }
+        public DbSet<TaskAssigned> TaskAssigned { get; set; }
 
         public DbSet<Documents> Documents { get; set; }
 

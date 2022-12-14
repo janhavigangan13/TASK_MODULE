@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace backend.Models
 {
-    public class TasAssigned
+    public class TaskAssigned
     {
         [Key]
         public int TaskId { get; set; }

@@ -117,7 +117,7 @@ namespace backend.Migrations
                     b.ToTable("Documents");
                 });
 
-            modelBuilder.Entity("backend.Models.TasAssigned", b =>
+            modelBuilder.Entity("backend.Models.TaskAssigned", b =>
                 {
                     b.Property<int>("TaskId")
                         .ValueGeneratedOnAdd()
@@ -157,7 +157,7 @@ namespace backend.Migrations
                     b.ToTable("TaskAssigned");
                 });
 
-            modelBuilder.Entity("backend.Models.TasAssigned", b =>
+            modelBuilder.Entity("backend.Models.TaskAssigned", b =>
                 {
                     b.HasOne("backend.Models.Documents", "Documents")
                         .WithMany()

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace backend.Migrations
 {
     [DbContext(typeof(CGDbContext))]
-    [Migration("20221214114206_one")]
+    [Migration("20221214120253_one")]
     partial class one
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -119,7 +119,7 @@ namespace backend.Migrations
                     b.ToTable("Documents");
                 });
 
-            modelBuilder.Entity("backend.Models.TasAssigned", b =>
+            modelBuilder.Entity("backend.Models.TaskAssigned", b =>
                 {
                     b.Property<int>("TaskId")
                         .ValueGeneratedOnAdd()
@@ -159,7 +159,7 @@ namespace backend.Migrations
                     b.ToTable("TaskAssigned");
                 });
 
-            modelBuilder.Entity("backend.Models.TasAssigned", b =>
+            modelBuilder.Entity("backend.Models.TaskAssigned", b =>
                 {
                     b.HasOne("backend.Models.Documents", "Documents")
                         .WithMany()

@@ -65,6 +65,6 @@ namespace Backend.Models
 
         public bool IsVerified { get; set; }
 
-        public virtual ICollection<TasAssigned> TaskAssigned { get; set; }
+        public virtual ICollection<TaskAssigned> TaskAssigned { get; set; }
     }
 }
